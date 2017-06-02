@@ -146,133 +146,18 @@ a {
   border-width: 6px;
 }
 
-
-/*html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+#preview {
+    height: 3em;
+    margin: 1.25em 0;
 }
 
-body {
-    margin: 0;
-    font-size: 0;
-    white-space: nowrap
+#code {
+  height: 95px;
 }
 
-a {
-    text-decoration: none;
-    outline: 0
+#snippet {
+  height: 53px;
 }
-
-.octicon {
-    display: inline-block;
-    _overflow: hidden
-}
-
-.button, .count {
-    display: inline-block;
-    height: 18px;
-    padding: 0 5px;
-    color: #333;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: #585e89;
-    border: 1px solid #d5d5d5;
-    border-radius: 3px
-}
-
-.button span, .count span {
-    font-weight: 600
-}
-
-.button i, .button span, .count span {
-    line-height: 18px;
-    vertical-align: middle
-    margin-top: -3px;
-}
-
-.button {
-    font-size: 11px;
-    background-color: #eee;
-    background-image: -webkit-linear-gradient(top, #fcfcfc, #eee);
-    background-image: -moz-linear-gradient(top, #fcfcfc, #eee);
-    background-image: linear-gradient(to bottom, #fcfcfc, #eee);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee')";
-    *filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee')
-}
-
-.button i {
-    font-size: 14px
-}
-
-.button:hover {
-    background-color: #ddd;
-    background-image: -webkit-linear-gradient(top, #eee, #ddd);
-    background-image: -moz-linear-gradient(top, #eee, #ddd);
-    background-image: linear-gradient(to bottom, #eee, #ddd);
-    border-color: #ccc;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd')";
-    *filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd')
-}
-
-.button:active {
-    background-color: #dcdcdc;
-    background-image: none;
-    border-color: #b5b5b5;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15)
-}
-
-.button:focus {
-    border-color: #51a7e8
-}
-
-.count {
-    position: relative;
-    margin-left: 5px;
-    font-size: 10px;
-    opacity: 60%;
-}
-
-.count b, .count i {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    display: block;
-    width: 0;
-    height: 0;
-    margin-top: -4px;
-    _font-size: 0;
-    _line-height: 0;
-    border: 4px solid;
-    _border-top-color: red!important;
-    _border-bottom-color: red!important;
-    _border-left-color: red!important;
-    _filter: chroma(color=red)
-}
-
-.count b {
-    margin-right: 0;
-    border-color: transparent #d5d5d5 transparent transparent
-}
-
-.count i {
-    margin-right: -1px;
-    border-color: transparent #fff transparent transparent
-}
-
-.count:hover {
-    color: #4183c4
-}
-
-.count:focus {
-    border-color: #a5a5a5
-}
-
-.count:focus b {
-    border-color: transparent #a5a5a5 transparent transparent
-}*/
 
 .mega .button, .mega .count {
     height: 26px
