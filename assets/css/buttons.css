@@ -1,4 +1,145 @@
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  margin: 0;
+  font-size: 0;
+  white-space: nowrap;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+}
+.octicon {
+  display: inline-block;
+  _overflow: hidden;
+}
+.button,
+.count {
+  display: inline-block;
+  height: 18px;
+  padding: 0 5px;
+  color: #333333;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  opacity: 75%;
+}
+.button span,
+.count span {
+  font-weight: 600;
+}
+.button i,
+.button span,
+.count span {
+  line-height: 18px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.button {
+  font-size: 11px;
+  background-color: transparent !important;
+  border: none;
+}
+.button i {
+  font-size: 14px;
+}
+.button i:before {
+  position: fixed;
+  font-size: 3em;
+  color: #585e89;
+}
+.button:hover {
+  background-color: transparent !important;
+  border: none;
+}
+.button:active {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0);
+}
+.button:focus {
+  border-color: #51a7e8;
+}
+.count {
+  position: relative;
+  margin-left: 5px;
+  font-size: 10px;
+  opacity: 60%;
+}
+.count b,
+.count i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -4px;
+  _font-size: 0;
+  _line-height: 0;
+}
+.count b {
+  margin-right: 0;
+  border-color: transparent;
+}
+.count i {
+  margin-right: -1px;
+  border-color: transparent;
+}
+.count b,
+.count i {
+  _border-top-color: red!important;
+  _border-bottom-color: red!important;
+  _border-left-color: red!important;
+  _filter: chroma(color=red);
+}
+.count:hover {
+  color: #4183c4;
+}
+.count:focus {
+  border-color: #a5a5a5;
+}
+.count:focus b {
+  border-color: transparent #a5a5a5 transparent transparent;
+}
+.mega .button,
+.mega .count {
+  height: 26px;
+}
+.mega .button i,
+.mega .button span,
+.mega .count span {
+  line-height: 26px;
+}
+.mega .button {
+  padding: 0 10px;
+  font-size: 12px;
+}
+.mega .button i {
+  font-size: 16px;
+}
+.mega .count {
+  position: relative;
+  top: 3em;
+  padding: 0 7px;
+  margin-left: 7px;
+  font-size: 11px;
+}
+.mega .count b,
+.mega .count i {
+  margin-top: -6px;
+  border-width: 6px;
+}
+
+
+/*html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -123,7 +264,7 @@ a {
 
 .count:focus b {
     border-color: transparent #a5a5a5 transparent transparent
-}
+}*/
 
 .mega .button, .mega .count {
     height: 26px
