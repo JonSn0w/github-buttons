@@ -95,8 +95,14 @@ html {
     margin: 25px 0;
 }
 
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin: 15px 0;
+}
+
 #preview-code {
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
