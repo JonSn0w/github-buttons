@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ntkme/github-buttons.git"
+    "url": "https://github.com/JonSn0w/github-buttons.git"
   },
   "keywords": [
     "GitHub",
@@ -18,7 +18,7 @@
   "license": "BSD-2-Clause",
   "private": true,
   "bugs": {
-    "url": "https://github.com/ntkme/github-buttons/issues"
+    "url": "https://github.com/JonSn0w/github-buttons/issues"
   },
   "homepage": "https://buttons.github.io",
   "devDependencies": {
