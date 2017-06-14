@@ -48,13 +48,15 @@ a {
   border: none;
 }
 .button i {
-  font-size: 14px;
+    position: relative;
+    top: 4px;
+    font-size: 14px;
 }
 .button i:before {
   position: fixed;
   font-size: 3em;
   background-color: darken(#585e89, 6%);
-  color: transparent;
+  color: #9FA3C1;
   text-shadow: 0px 1px 1.5px rgba(255,255,255,0.3);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -79,6 +81,8 @@ a {
   position: relative;
   margin-left: 5px;
   font-size: 10px;
+  top: 1.2em;
+  left: 2.75em;
   opacity: 60%;
 }
 .count b,
@@ -231,5 +235,8 @@ a {
     width: 1.125em
 }
 
-
+iframe {
+  width: 100px !important;
+  height: 50px !important;
+}
 /*# sourceMappingURL=buttons.min.css.map */
