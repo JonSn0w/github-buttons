@@ -99,7 +99,7 @@ class ButtonAnchor
       "aria-label"
     ]
     if element.getAttribute "data-count-api"
-      console and console.warn "GitHub Buttons deprecated `data-count-api`: use `data-show-count` instead. Please refer to https://github.com/JonSn0w/github-buttons for more info."
+      console and console.warn "GitHub Buttons deprecated `data-count-api`: use `data-show-count` instead. Please refer to https://github.com/ntkme/github-buttons for more info."
       options["data-show-count"] = 1
     options
 
@@ -139,7 +139,7 @@ class ButtonFrame extends Frame
 
     @html \
       """
-      <!DOCTYPE html><html><head><meta charset="utf-8"><title>#{CONFIG_UUID}</title><base><!--[if lte IE 6]></base><![endif]--><link rel="stylesheet" href="#{CONFIG_URL}assets/css/buttons.min.css"><script>document.location.hash = "#{hash}";</script></head><body><script src="#{CONFIG_URL}buttons.js"></script></body></html>
+      <!DOCTYPE html><html><head><meta charset="utf-8"><title>#{CONFIG_UUID}</title><base><!--[if lte IE 6]></base><![endif]--><link rel="stylesheet" href="#{CONFIG_URL}assets/css/buttons.css"><script>document.location.hash = "#{hash}";</script></head><body><script src="#{CONFIG_URL}buttons.js"></script></body></html>
       """
 
 

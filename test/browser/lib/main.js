@@ -252,7 +252,7 @@
         options[attribute] = element.getAttribute(attribute) || "";
       }
       if (element.getAttribute("data-count-api")) {
-        console && console.warn("GitHub Buttons deprecated `data-count-api`: use `data-show-count` instead. Please refer to https://github.com/JonSn0w/github-buttons for more info.");
+        console && console.warn("GitHub Buttons deprecated `data-count-api`: use `data-show-count` instead. Please refer to https://github.com/ntkme/github-buttons for more info.");
         options["data-show-count"] = 1;
       }
       return options;
@@ -304,7 +304,7 @@
           reload();
         }
       });
-      this.html("<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>" + CONFIG_UUID + "</title><base><!--[if lte IE 6]></base><![endif]--><link rel=\"stylesheet\" href=\"" + CONFIG_URL + "assets/css/buttons.min.css\"><script>document.location.hash = \"" + hash + "\";</script></head><body><script src=\"" + CONFIG_URL + "buttons.js\"></script></body></html>");
+      this.html("<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>" + CONFIG_UUID + "</title><base><!--[if lte IE 6]></base><![endif]--><link rel=\"stylesheet\" href=\"" + CONFIG_URL + "assets/css/buttons.css\"><script>document.location.hash = \"" + hash + "\";</script></head><body><script src=\"" + CONFIG_URL + "buttons.js\"></script></body></html>");
     }
 
     return ButtonFrame;
@@ -870,21 +870,21 @@
         "status": 200
       },
       "data": {
-        "login": "JonSn0w",
+        "login": "ntkme",
         "id": 899645,
         "avatar_url": "https://avatars.githubusercontent.com/u/899645?v=3",
         "gravatar_id": "",
-        "url": "https://api.github.com/users/JonSn0w",
-        "html_url": "https://github.com/JonSn0w",
-        "followers_url": "https://api.github.com/users/JonSn0w/followers",
-        "following_url": "https://api.github.com/users/JonSn0w/following{/other_user}",
-        "gists_url": "https://api.github.com/users/JonSn0w/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/JonSn0w/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/JonSn0w/subscriptions",
-        "organizations_url": "https://api.github.com/users/JonSn0w/orgs",
-        "repos_url": "https://api.github.com/users/JonSn0w/repos",
-        "events_url": "https://api.github.com/users/JonSn0w/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/JonSn0w/received_events",
+        "url": "https://api.github.com/users/ntkme",
+        "html_url": "https://github.com/ntkme",
+        "followers_url": "https://api.github.com/users/ntkme/followers",
+        "following_url": "https://api.github.com/users/ntkme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ntkme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ntkme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ntkme/subscriptions",
+        "organizations_url": "https://api.github.com/users/ntkme/orgs",
+        "repos_url": "https://api.github.com/users/ntkme/repos",
+        "events_url": "https://api.github.com/users/ntkme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ntkme/received_events",
         "type": "User",
         "site_admin": false,
         "name": "なつき",
@@ -949,7 +949,7 @@
       it('should append the button with given href', function() {
         var button, options;
         options = {
-          "href": "https://JonSn0w.github.com/"
+          "href": "https://ntkme.github.com/"
         };
         new ButtonFrameContent(options);
         button = document.body.appendChild.args[0][0];
@@ -1014,7 +1014,7 @@
           return window.callback(data);
         });
         options = {
-          "href": "https://github.com/JonSn0w",
+          "href": "https://github.com/ntkme",
           "data-show-count": true
         };
         new ButtonFrameContent(options);
@@ -1035,7 +1035,7 @@
           });
         });
         options = {
-          "href": "https://github.com/JonSn0w",
+          "href": "https://github.com/ntkme",
           "data-show-count": true
         };
         new ButtonFrameContent(options);

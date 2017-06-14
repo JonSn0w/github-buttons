@@ -394,21 +394,21 @@ describe 'ButtonFrameContent', ->
       "X-GitHub-Media-Type": "github.v3",
       "status": 200
     "data":
-      "login": "JonSn0w",
+      "login": "ntkme",
       "id": 899645,
       "avatar_url": "https://avatars.githubusercontent.com/u/899645?v=3",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/JonSn0w",
-      "html_url": "https://github.com/JonSn0w",
-      "followers_url": "https://api.github.com/users/JonSn0w/followers",
-      "following_url": "https://api.github.com/users/JonSn0w/following{/other_user}",
-      "gists_url": "https://api.github.com/users/JonSn0w/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/JonSn0w/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/JonSn0w/subscriptions",
-      "organizations_url": "https://api.github.com/users/JonSn0w/orgs",
-      "repos_url": "https://api.github.com/users/JonSn0w/repos",
-      "events_url": "https://api.github.com/users/JonSn0w/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/JonSn0w/received_events",
+      "url": "https://api.github.com/users/ntkme",
+      "html_url": "https://github.com/ntkme",
+      "followers_url": "https://api.github.com/users/ntkme/followers",
+      "following_url": "https://api.github.com/users/ntkme/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ntkme/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ntkme/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ntkme/subscriptions",
+      "organizations_url": "https://api.github.com/users/ntkme/orgs",
+      "repos_url": "https://api.github.com/users/ntkme/repos",
+      "events_url": "https://api.github.com/users/ntkme/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ntkme/received_events",
       "type": "User",
       "site_admin": false,
       "name": "なつき",
@@ -480,7 +480,7 @@ describe 'ButtonFrameContent', ->
         .and.equal "button"
 
     it 'should append the button with given href', ->
-      options = "href": "https://JonSn0w.github.com/"
+      options = "href": "https://ntkme.github.com/"
       new ButtonFrameContent options
       button = document.body.appendChild.args[0][0]
       expect button.getAttribute "href"
@@ -531,7 +531,7 @@ describe 'ButtonFrameContent', ->
     it 'should append the count to document.body when the necessary options are given', ->
       sinon.stub(head, "appendChild").callsFake -> window.callback data
       options =
-        "href": "https://github.com/JonSn0w"
+        "href": "https://github.com/ntkme"
         "data-show-count": true
       new ButtonFrameContent options
       expect document.body.appendChild
@@ -550,7 +550,7 @@ describe 'ButtonFrameContent', ->
     it 'should not append the count when it fails to pull api data', ->
       sinon.stub(head, "appendChild").callsFake -> window.callback meta: status: 404
       options =
-        "href": "https://github.com/JonSn0w"
+        "href": "https://github.com/ntkme"
         "data-show-count": true
       new ButtonFrameContent options
       expect document.body.appendChild

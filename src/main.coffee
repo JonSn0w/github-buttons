@@ -177,7 +177,7 @@ class ButtonForm extends Form
             user_repo.removeClass "has-warning"
 
         if (user_repo.hasClass "has-error") or (user_repo.hasClass "has-warning")
-          options.user = "JonSn0w"
+          options.user = "ntkme"
           options.repo = "github-buttons"
 
         if @cache isnt (cache = Hash.encode options) or force
