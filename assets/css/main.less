@@ -9,21 +9,26 @@ html {
   border-bottom: 1px solid #e5e5e5;
 
   h1 {
-    height: 32px;
+    height: 35px;
     padding: 8px 0;
     margin: 0 auto;
     font-size: 32px;
 
     .octicon-logo-github {
-      height: 32px;
+      height: 35px;
       overflow: hidden;
       font-size: 96px;
       color: #000;
       vertical-align: top;
+      &:before {
+        position: relative;
+        top: 3px;
+      }
     }
     .logo-colon {
       font-size: 28px;
       color: #afafaf;
+      padding: 0 3px;
       vertical-align: bottom;
     }
     .logo-buttons {
@@ -81,4 +86,12 @@ html {
   cursor: pointer;
   background-color: #fff;
   resize: none;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 25px 0;
+}
+
+#preview-code {
+    margin-left: 25px;
 }

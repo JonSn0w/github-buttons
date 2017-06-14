@@ -17,16 +17,22 @@ html {
 }
 
 .header h1 .octicon-logo-github {
-    height: 32px;
+    height: 35px;
     overflow: hidden;
     font-size: 96px;
-    color: #000;
+    color: #0a0a0a;
     vertical-align: top
+}
+
+.header h1 .octicon-logo-github:before {
+    position: relative;
+    top: 3px;
 }
 
 .header h1 .logo-colon {
     font-size: 28px;
     color: #afafaf;
+    padding: 0 3px;
     vertical-align: bottom
 }
 
@@ -85,5 +91,12 @@ html {
     resize: none;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 25px 0;
+}
+
+#preview-code {
+    margin-left: 25px;
+}
 
 /*# sourceMappingURL=main.css.map */
