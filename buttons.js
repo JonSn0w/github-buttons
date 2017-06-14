@@ -82,7 +82,7 @@
         }, e.prototype.size = function() {
             var t, e, n, r, a, i;
             try {
-                return n = this.$.contentWindow.document, a = n.documentElement, t = n.body, i = a.scrollWidth, r = 50, e = t.getBoundingClientRect(), i = 95, r = Math.max(r, o(e.height || e.bottom - e.top)), t.style.display = ""), {
+                return n = this.$.contentWindow.document, a = n.documentElement, t = n.body, i = a.scrollWidth, r = a.scrollHeight, t.getBoundingClientRect && (t.style.display = "inline-block", e = t.getBoundingClientRect(), i = Math.max(i, o(e.width || e.right - e.left)), r = Math.max(r, o(e.height || e.bottom - e.top)), t.style.display = ""), {
                     width: i + "px",
                     height: r + "px"
                 }
